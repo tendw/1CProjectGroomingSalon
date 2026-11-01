@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ChartOfAccounts xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9a038b32-de89-48ce-8ff6-96b322238ca6">
+  <producedTypes>
+    <objectType typeId="2a62d2d6-cd4e-4a82-a4ef-1b8a2561dc48" valueTypeId="77435c3b-2b66-4103-b326-4bb06760fed7"/>
+    <refType typeId="5589bb7e-ddf3-4a50-b4b7-b8dfb41fb9cf" valueTypeId="28219e25-a9da-44ad-ac89-cbce034f64ef"/>
+    <selectionType typeId="02de3c9b-aaee-42f4-be2f-eac56d0fd5a0" valueTypeId="ac2e894d-e36a-4278-9071-91e74d1828e6"/>
+    <listType typeId="80253ee8-1ebc-4a6b-8819-b85abda9d4f1" valueTypeId="6b0cd8c1-e4f0-44c4-a874-3f7c09ee5f25"/>
+    <managerType typeId="d24ceea6-ff91-4201-bcd7-1afb253ee384" valueTypeId="a762b920-0a0e-499b-8a2d-c3966e5a353c"/>
+    <extDimensionTypes typeId="02cf8e3d-d76d-4c9e-8313-fc98d051fa0c" valueTypeId="a7e582f9-50c2-49e3-8306-3854886415c4"/>
+    <extDimensionTypesRow typeId="6e003cc7-1012-4985-a3f3-5b9ad8380708" valueTypeId="e0ba2a90-4758-44e9-bc77-05ecf0ad50d5"/>
+  </producedTypes>
+  <name>Хозрасчетный</name>
+  <synonym>
+    <key>ru</key>
+    <value>План счетов бухгалтерского учета</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>ChartOfAccounts.Хозрасчетный.StandardAttribute.Description</inputByString>
+  <inputByString>ChartOfAccounts.Хозрасчетный.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>DontUse</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <extDimensionTypes>ChartOfCharacteristicTypes.ВидыСубконтоХозрасчетные</extDimensionTypes>
+  <maxExtDimensionCount>1</maxExtDimensionCount>
+  <codeLength>9</codeLength>
+  <descriptionLength>120</descriptionLength>
+  <checkUnique>true</checkUnique>
+  <predefined>
+    <items id="ac617c72-4d0b-4980-b192-bcaa11d57d55">
+      <name>Материалы</name>
+      <description>Материалы</description>
+      <code>10</code>
+      <extDimensionTypes>
+        <characteristicType>ChartOfCharacteristicTypes.ВидыСубконтоХозрасчетные.Номенклатура</characteristicType>
+      </extDimensionTypes>
+    </items>
+    <items id="5324c41a-1cf6-4a62-a231-b92d71baceb2">
+      <name>Товары</name>
+      <description>Товары</description>
+      <code>41</code>
+      <extDimensionTypes>
+        <characteristicType>ChartOfCharacteristicTypes.ВидыСубконтоХозрасчетные.Номенклатура</characteristicType>
+      </extDimensionTypes>
+    </items>
+    <items id="1578b552-4192-4532-bda9-01e4bed0a3bc">
+      <name>РасходыНаПродажу</name>
+      <description>Расходы на продажу</description>
+      <code>44</code>
+      <extDimensionTypes>
+        <characteristicType>ChartOfCharacteristicTypes.ВидыСубконтоХозрасчетные.СтатьиЗатрат</characteristicType>
+      </extDimensionTypes>
+    </items>
+    <items id="b987d7eb-4f9e-4c1b-bde2-7bfa4113e5d1">
+      <name>Касса</name>
+      <description>Касса</description>
+      <code>50</code>
+      <extDimensionTypes>
+        <characteristicType>ChartOfCharacteristicTypes.ВидыСубконтоХозрасчетные.Кассы</characteristicType>
+      </extDimensionTypes>
+    </items>
+    <items id="6ce87649-ad17-4cc1-bed6-e10094eebe53">
+      <name>РасчетныеСчета</name>
+      <description>Расчетные счета</description>
+      <code>51</code>
+      <extDimensionTypes>
+        <characteristicType>ChartOfCharacteristicTypes.ВидыСубконтоХозрасчетные.БанковскиеСчета</characteristicType>
+      </extDimensionTypes>
+    </items>
+    <items id="16ab0e90-cc86-4dc5-befc-6ee44fcf37c3">
+      <name>ПереводыВПути</name>
+      <description>Переводы в пути</description>
+      <code>57</code>
+      <extDimensionTypes>
+        <characteristicType>ChartOfCharacteristicTypes.ВидыСубконтоХозрасчетные.ЭквайринговыеТерминалы</characteristicType>
+      </extDimensionTypes>
+    </items>
+    <items id="49eecdc4-8e6e-4c11-a8a1-46c99b84eff9">
+      <name>РасчетыСПоставщиками</name>
+      <description>Расчеты с поставщиками</description>
+      <code>60</code>
+      <accountType>ActivePassive</accountType>
+      <extDimensionTypes>
+        <characteristicType>ChartOfCharacteristicTypes.ВидыСубконтоХозрасчетные.Контрагенты</characteristicType>
+      </extDimensionTypes>
+    </items>
+    <items id="d434483a-b1a3-4aab-b03f-5639d2bfe39d">
+      <name>РасчетыСПокупателями</name>
+      <description>Расчеты с покупателями</description>
+      <code>62</code>
+      <accountType>ActivePassive</accountType>
+      <extDimensionTypes>
+        <characteristicType>ChartOfCharacteristicTypes.ВидыСубконтоХозрасчетные.Контрагенты</characteristicType>
+      </extDimensionTypes>
+    </items>
+    <items id="11be103a-f1c9-4711-8fc2-c64a40fe6f08">
+      <name>РасчетыСПерсоналомПоОплатеТруда</name>
+      <description>Расчеты с персоналом по оплате труда</description>
+      <code>70</code>
+      <accountType>ActivePassive</accountType>
+      <extDimensionTypes>
+        <characteristicType>ChartOfCharacteristicTypes.ВидыСубконтоХозрасчетные.Сотрудники</characteristicType>
+      </extDimensionTypes>
+    </items>
+    <items id="db00863c-c219-4808-878b-249fbde1440a">
+      <name>РасчетыСПодотчетнымиЛицами</name>
+      <description>Расчеты с подотчетными лицами</description>
+      <code>71</code>
+      <accountType>ActivePassive</accountType>
+      <extDimensionTypes>
+        <characteristicType>ChartOfCharacteristicTypes.ВидыСубконтоХозрасчетные.Сотрудники</characteristicType>
+      </extDimensionTypes>
+    </items>
+    <items id="099aaaef-8aeb-45c7-baa2-212726b0c10f">
+      <name>Продажи</name>
+      <description>Продажи</description>
+      <code>90</code>
+      <accountType>ActivePassive</accountType>
+    </items>
+    <items id="aa452319-89ba-4d12-824f-def73c8bd96b">
+      <name>ПрочиеДоходыИРасходы</name>
+      <description>Прочие доходы и расходы</description>
+      <code>91</code>
+      <accountType>ActivePassive</accountType>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:ChartOfAccounts>

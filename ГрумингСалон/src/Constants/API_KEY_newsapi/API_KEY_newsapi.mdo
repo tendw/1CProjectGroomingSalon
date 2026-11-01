@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8686492d-9ef3-46ee-bd67-101f696a8fc4">
+  <producedTypes>
+    <managerType typeId="592e1e90-6721-4be1-937c-24032b40b32e" valueTypeId="12c9724d-07f1-4cfd-a08e-73a397549c58"/>
+    <valueManagerType typeId="276fe8c2-3588-4cd1-a222-f9d4c83e1961" valueTypeId="0263fbf6-bcc6-4f35-8007-cb4ef9c2d76d"/>
+    <valueKeyType typeId="87bb8c83-2a40-4a6f-8078-9085f18a8dbd" valueTypeId="61d95e53-05b3-4d8c-b335-acf5089e838c"/>
+  </producedTypes>
+  <name>API_KEY_newsapi</name>
+  <synonym>
+    <key>ru</key>
+    <value>API KEY newsapi</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers/>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

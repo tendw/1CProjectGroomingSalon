@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9d108777-09fc-4867-ac36-5b4ed6de4720">
+  <producedTypes>
+    <refType typeId="a8db991c-0b1a-4bfb-953b-cca8af1a5e22" valueTypeId="d026f4e2-07b1-4849-8730-8d08fa760a71"/>
+    <listType typeId="412c559a-255f-445d-9a69-84afb12b33ea" valueTypeId="5fd7081c-e381-46dd-9340-2d8b87046992"/>
+    <managerType typeId="8e660134-3b94-4dd5-983f-077ace4f3a2d" valueTypeId="e69ce4e2-ae8a-4cbf-bcd0-eaef52a65e86"/>
+  </producedTypes>
+  <name>ВидыУчетнойПолитики</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды учетной политики</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="cf5bccf3-54a6-44b4-9e0d-6d49fc1a3150">
+    <name>FEFO</name>
+    <synonym>
+      <key>ru</key>
+      <value>FEFO</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="a54736ec-57bc-4b4f-867b-dc0040268385">
+    <name>ПоСредней</name>
+    <synonym>
+      <key>ru</key>
+      <value>По средней</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ed2c91cd-ac4a-4982-aef1-5bdeace43a49">
+  <producedTypes>
+    <selectionType typeId="f2d59262-6a61-4193-8847-f00ced7ff414" valueTypeId="c25a2cff-86fc-4cc8-8c81-5cf03e3e34af"/>
+    <listType typeId="866cd01a-fecf-4529-89f5-27b4a6fb96d2" valueTypeId="57ee1fef-8efd-41ba-96ca-e422f5dbef2f"/>
+    <managerType typeId="72f736f8-ac59-4e39-b259-dff800dd9ace" valueTypeId="e43466d5-3078-44ab-bd2d-c37108bd7529"/>
+    <recordSetType typeId="5e79f424-4447-4b7e-bfee-0238e72cf3fe" valueTypeId="70de3fc5-14a3-4c6f-b81c-f01f6507e57e"/>
+    <recordKeyType typeId="b2956fa4-7919-4a82-ab35-4b9365d01004" valueTypeId="c72af653-5a49-4d5f-9c6d-71e332ff7e46"/>
+    <recordType typeId="b1ed7fe2-73d8-4551-9e0d-2b7d65b3abf3" valueTypeId="6f908df0-73d4-4800-949e-3062d0f2b302"/>
+  </producedTypes>
+  <name>ЗаказыКлиентов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Заказы клиентов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="47a5b1fc-9877-4cd2-bbc5-f8bd43252b56">
+    <name>СуммаПлан</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма план</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ФинансовыеДанные</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="1d18b045-087a-4298-b215-a4e7742b4ca3">
+    <name>СуммаФакт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма факт</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ФинансовыеДанные</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="e4097c7b-2791-4836-8115-36f1d890e70b">
+    <name>Клиент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Клиент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="d03fca26-5b3f-4b05-b4ea-febf25482771">
+    <name>ЗаписьКлиента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запись клиента</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ЗаписьКлиента</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="acbc9d7e-665e-4e4d-aaa7-7987e87aae6c">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

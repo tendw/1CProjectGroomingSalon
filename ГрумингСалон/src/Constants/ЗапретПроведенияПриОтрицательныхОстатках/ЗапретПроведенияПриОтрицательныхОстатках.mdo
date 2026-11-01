@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b3a6d2cf-15d8-447f-8658-7a3d0db61080">
+  <producedTypes>
+    <managerType typeId="96c93785-9fee-4f7c-8902-09af41b6b074" valueTypeId="5d87334a-83b2-4fa4-9114-fc05a4a475e4"/>
+    <valueManagerType typeId="d6d5d287-2e63-49f3-97df-daff4c5e55e6" valueTypeId="16019e0a-bd6c-4642-81f4-90dd58a02257"/>
+    <valueKeyType typeId="50c292d2-4504-4f0f-8629-fb14f6564f01" valueTypeId="b2e36f74-edc9-4df2-a4ce-ddc4af82f446"/>
+  </producedTypes>
+  <name>ЗапретПроведенияПриОтрицательныхОстатках</name>
+  <synonym>
+    <key>ru</key>
+    <value>Запрет проведения при отрицательных остатках</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>CommonForm.ЗапретПроведенияПриОтрицательныхОстатках</defaultForm>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

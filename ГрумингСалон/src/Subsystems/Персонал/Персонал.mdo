@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c3766cf5-dbd2-4fac-9cc0-909d62089432">
+  <name>Персонал</name>
+  <synonym>
+    <key>ru</key>
+    <value>Персонал</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.Персонал</picture>
+  </picture>
+  <content>Catalog.Сотрудники</content>
+  <content>Catalog.Должности</content>
+  <content>Catalog.ГрафикиРаботыСотрудников</content>
+  <content>InformationRegister.ГрафикиРаботыПредприятия</content>
+  <content>InformationRegister.КадроваяИсторияСотрудников</content>
+  <content>CalculationRegister.Начисления</content>
+  <content>Document.НачислениеЗарплаты</content>
+  <content>Document.БольничныйЛист</content>
+  <content>Document.Премия</content>
+  <content>ChartOfCalculationTypes.Начисления</content>
+  <content>Report.ОтчетПоНачислениюЗарплаты</content>
+</mdclass:Subsystem>

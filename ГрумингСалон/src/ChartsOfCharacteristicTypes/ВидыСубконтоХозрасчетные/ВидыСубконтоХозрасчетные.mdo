@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ChartOfCharacteristicTypes xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="eb9ebd32-1172-4e6d-8b10-e293a342843f">
+  <producedTypes>
+    <objectType typeId="daf74433-c296-4421-b930-1ff12e960595" valueTypeId="9e80f4ba-3f36-4590-9002-994afae4454d"/>
+    <refType typeId="4d28a2b0-1e99-4af4-b8d7-bdfec9db2592" valueTypeId="5f904b23-228a-42ee-8849-cadb64990905"/>
+    <selectionType typeId="0b8bb1db-b84f-4a7a-b8a9-aa8aaf0c5a7d" valueTypeId="ad288a1a-5323-48f4-907b-90f1b6c18c4d"/>
+    <listType typeId="03d972d4-6cd0-4d14-b970-147fdee85809" valueTypeId="62891d68-cd87-48e6-8321-3527d740f849"/>
+    <managerType typeId="6967ce3e-5a2e-4020-b625-8cfe0bffd141" valueTypeId="e9680f9e-b212-4e2b-b307-641679ee9937"/>
+    <containerType typeId="e1205ce6-f8f6-4291-99ea-6382cb8b9b68" valueTypeId="57c0fbfb-6eb0-4556-9893-19a94dfea643"/>
+  </producedTypes>
+  <name>ВидыСубконтоХозрасчетные</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды субконто хозрасчетные</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>ChartOfCharacteristicTypes.ВидыСубконтоХозрасчетные.StandardAttribute.Description</inputByString>
+  <inputByString>ChartOfCharacteristicTypes.ВидыСубконтоХозрасчетные.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>DontUse</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <type>
+    <types>CatalogRef.Кассы</types>
+    <types>CatalogRef.Номенклатура</types>
+    <types>CatalogRef.СтатьиЗатрат</types>
+    <types>CatalogRef.БанковскиеСчета</types>
+    <types>CatalogRef.Сотрудники</types>
+    <types>CatalogRef.ЭквайринговыеТерминалы</types>
+    <types>CatalogRef.Контрагенты</types>
+  </type>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <descriptionLength>25</descriptionLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="8fe5bab2-0e8a-47fc-95b4-eb154e84cdfd">
+      <name>БанковскиеСчета</name>
+      <description>Банковские счета</description>
+      <code>000000001</code>
+      <type>
+        <types>CatalogRef.БанковскиеСчета</types>
+      </type>
+    </items>
+    <items id="37123178-a9ee-4343-8467-67fa8bb10852">
+      <name>Кассы</name>
+      <description>Кассы</description>
+      <code>000000002</code>
+      <type>
+        <types>CatalogRef.Кассы</types>
+      </type>
+    </items>
+    <items id="671c3fd1-1319-4495-8e11-32be1129802b">
+      <name>Контрагенты</name>
+      <description>Контрагенты</description>
+      <code>000000003</code>
+      <type>
+        <types>CatalogRef.Контрагенты</types>
+      </type>
+    </items>
+    <items id="29f5ae1f-84f2-44f1-9ecd-3902dd695d1d">
+      <name>Номенклатура</name>
+      <description>Номенклатура</description>
+      <code>000000004</code>
+      <type>
+        <types>CatalogRef.Номенклатура</types>
+      </type>
+    </items>
+    <items id="449faf23-2e07-49b2-88ef-4ef6b40872ee">
+      <name>Сотрудники</name>
+      <description>Сотрудники</description>
+      <code>000000005</code>
+      <type>
+        <types>CatalogRef.Сотрудники</types>
+      </type>
+    </items>
+    <items id="df0e30ab-30a4-4de5-a4a8-1415d0b44653">
+      <name>СтатьиЗатрат</name>
+      <description>Статьи затрат</description>
+      <code>000000006</code>
+      <type>
+        <types>CatalogRef.СтатьиЗатрат</types>
+      </type>
+    </items>
+    <items id="58f0a45c-8087-4a76-94d1-32e38956f3d0">
+      <name>ЭквайринговыеТерминалы</name>
+      <description>Эквайринговые терминалы</description>
+      <code>000000007</code>
+      <type>
+        <types>CatalogRef.ЭквайринговыеТерминалы</types>
+      </type>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:ChartOfCharacteristicTypes>

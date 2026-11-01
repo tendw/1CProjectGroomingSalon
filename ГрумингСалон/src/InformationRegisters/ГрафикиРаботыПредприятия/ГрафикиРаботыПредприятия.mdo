@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="10735b03-f684-440e-bbe0-ff592179ca20">
+  <producedTypes>
+    <selectionType typeId="444fd54f-57b5-4f5e-97cd-e53f37991fde" valueTypeId="55d2247c-0388-4544-8e40-60fa45d881c1"/>
+    <listType typeId="5ee75768-ce3f-422b-994a-5e6f6fc5ece8" valueTypeId="6e3f6dc1-c8ea-4f3f-bbd8-1e25c460349f"/>
+    <managerType typeId="4b8688f7-0d20-450b-9a13-e2063b755370" valueTypeId="ebeeedd5-f9d9-4aa7-88a7-63674dede67d"/>
+    <recordSetType typeId="d6af9d51-b1df-40eb-9c15-7e05f0d51402" valueTypeId="64e24b79-daac-4471-9eff-dd37335ad305"/>
+    <recordKeyType typeId="ede1833d-9e35-4135-a272-32f9f731b16e" valueTypeId="7d7b8a86-3901-48e5-b8b8-e6fb03c7845d"/>
+    <recordType typeId="662c4d51-5706-475e-bb94-0268789e63f6" valueTypeId="71ff0248-e5b0-406e-a40b-5f3412c8f45a"/>
+    <recordManagerType typeId="9c935b61-f73a-4b00-a3b9-b16bf33e81df" valueTypeId="99996dbd-c2ae-4719-a70d-d819b8000ba7"/>
+  </producedTypes>
+  <name>ГрафикиРаботыПредприятия</name>
+  <synonym>
+    <key>ru</key>
+    <value>Графики работы предприятия</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="d4d6d72c-75f8-422d-954b-b2437e81fb16">
+    <name>КоличествоЧасов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество часов</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:StringValue">
+      <value>24</value>
+    </maxValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="feb34af3-8963-492f-9e3b-676e2f943e52">
+    <name>День</name>
+    <synonym>
+      <key>ru</key>
+      <value>День</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="3ce9a99e-6708-482e-93db-07ec7aec21c0">
+    <name>График</name>
+    <synonym>
+      <key>ru</key>
+      <value>График</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ГрафикиРаботыСотрудников</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

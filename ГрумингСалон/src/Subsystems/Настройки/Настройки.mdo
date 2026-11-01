@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d3f6cb78-a233-4cb0-9da0-4c18bd07a1f4">
+  <name>Настройки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.Настройки</picture>
+  </picture>
+  <content>Constant.ИспользоватьСклады</content>
+  <content>FunctionalOption.ИспользоватьСклады</content>
+  <content>CommonForm.ЗапретПроведенияПриОтрицательныхОстатках</content>
+  <content>Constant.НачалоРабочегоДня</content>
+  <content>Constant.ОкончаниеРабочегоДня</content>
+  <content>Document.УстановкаУчетнойПолитикиОрганизации</content>
+  <content>Constant.API_KEY_newsapi</content>
+  <content>Constant.ЗапретПроведенияПриОтрицательныхОстатках</content>
+  <content>Catalog.Пользователи</content>
+  <content>Catalog.ДополнительныеОтчетыИОбработки</content>
+  <content>Constant.ИспользоватьДополнительныеОтчетыИОбработки</content>
+  <subsystems>БизнесПроцессыИЗадачи</subsystems>
+</mdclass:Subsystem>

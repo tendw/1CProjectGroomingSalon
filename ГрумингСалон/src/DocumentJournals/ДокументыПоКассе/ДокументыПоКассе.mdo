@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d827a909-dca3-4b8a-b7a3-573262341c6a">
+  <producedTypes>
+    <selectionType typeId="70ef23ae-deb6-4928-b36d-b2d8694d7947" valueTypeId="570c3a3d-c168-4983-af6e-a02cf4ef6d87"/>
+    <listType typeId="e6d7e166-4061-463d-bd5e-cfe75f2ed72a" valueTypeId="9abb8afa-e960-4ad9-b598-6c499f7b3274"/>
+    <managerType typeId="af393877-0a7c-4cf7-a605-58359682f0b7" valueTypeId="89c7c32b-c127-4681-ae1f-27d11f7d2d4a"/>
+  </producedTypes>
+  <name>ДокументыПоКассе</name>
+  <synonym>
+    <key>ru</key>
+    <value>Документы по кассе</value>
+  </synonym>
+  <defaultForm>DocumentJournal.ДокументыПоКассе.Form.ФормаСписка</defaultForm>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.ПоступлениеДенежныхСредств</registeredDocuments>
+  <registeredDocuments>Document.РасходДенежныхСредств</registeredDocuments>
+  <columns uuid="6f4bc0d4-aec9-40a4-b78c-2357fbde1d0d">
+    <name>ВидОперации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид операции</value>
+    </synonym>
+    <references>Document.ПоступлениеДенежныхСредств.Attribute.ВидОперации</references>
+    <references>Document.РасходДенежныхСредств.Attribute.ВидОперации</references>
+  </columns>
+  <columns uuid="300c5aa0-beeb-494b-882e-9da410285adf">
+    <name>Приход</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приход</value>
+    </synonym>
+    <references>Document.ПоступлениеДенежныхСредств.Attribute.СуммаДокумента</references>
+  </columns>
+  <columns uuid="e29337d4-0da6-4f02-beb1-0475af465e4f">
+    <name>Расход</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расход</value>
+    </synonym>
+    <references>Document.РасходДенежныхСредств.Attribute.СуммаДокумента</references>
+  </columns>
+  <columns uuid="c83253ad-9fa7-483d-b84f-6d735bd4ac1b">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <references>Document.ПоступлениеДенежныхСредств.Attribute.Плательщик</references>
+    <references>Document.РасходДенежныхСредств.Attribute.Получатель</references>
+  </columns>
+  <columns uuid="60426832-5adc-4879-a2b3-d37ef3fd45d7">
+    <name>Касса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Касса</value>
+    </synonym>
+    <references>Document.ПоступлениеДенежныхСредств.Attribute.Касса</references>
+    <references>Document.РасходДенежныхСредств.Attribute.Касса</references>
+  </columns>
+  <columns uuid="e0804bf1-0cce-4c14-9523-102067743e99">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <references>Document.ПоступлениеДенежныхСредств.Attribute.Комментарий</references>
+    <references>Document.РасходДенежныхСредств.Attribute.Комментарий</references>
+  </columns>
+  <columns uuid="47d4ad88-14d0-4a9b-9fd7-2a8a9682cab4">
+    <name>АвторДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автор документа</value>
+    </synonym>
+    <references>Document.ПоступлениеДенежныхСредств.Attribute.АвторДокумента</references>
+    <references>Document.РасходДенежныхСредств.Attribute.АвторДокумента</references>
+  </columns>
+  <forms uuid="dbe75dd8-864c-4681-a320-573da6513964">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DocumentJournal>

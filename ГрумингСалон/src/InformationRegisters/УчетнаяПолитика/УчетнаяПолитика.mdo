@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="056f2b1a-327d-4185-8965-84cdad6d0e71">
+  <producedTypes>
+    <selectionType typeId="afeb2f2c-4010-46c2-abc0-794ac7fbca84" valueTypeId="a98e2cf3-8553-4b2c-8437-a1286f3321da"/>
+    <listType typeId="27a2040c-5afb-4ded-adec-5aae3b5bf08b" valueTypeId="d3dd5975-5a86-441f-96c6-76ac2f19a4dc"/>
+    <managerType typeId="1ae152b0-eaae-4366-8862-6cb3e78b2614" valueTypeId="09ba238d-afcb-4af9-a69f-eebda65190d5"/>
+    <recordSetType typeId="f5fdbebf-4e03-49d9-a13b-7c23dbb43611" valueTypeId="948d42d9-72c0-4575-bd0a-d501565fd310"/>
+    <recordKeyType typeId="38dd9677-0ed3-4c42-8cf8-752c485a4d38" valueTypeId="1367b635-309a-4055-a0ab-bf8cbf4f3eba"/>
+    <recordType typeId="20c9e113-b734-4029-82c1-c2d9cc8850e6" valueTypeId="99be401e-9416-471e-bd0f-8cbff5d0ca9e"/>
+    <recordManagerType typeId="10a13526-4fa7-439b-a98e-970fcc897ad8" valueTypeId="7df3ff47-ba69-4892-a1b4-3365abc88d0f"/>
+  </producedTypes>
+  <name>УчетнаяПолитика</name>
+  <synonym>
+    <key>ru</key>
+    <value>Учетная политика</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="fb4687e5-cd77-4ed5-8af7-d4d455e0c596">
+    <name>УчетнаяПолитика</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учетная политика</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыУчетнойПолитики</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+</mdclass:InformationRegister>

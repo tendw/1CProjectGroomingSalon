@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:BusinessProcess xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="aa6e461d-908c-439c-b32f-eb291e822c80">
+  <producedTypes>
+    <objectType typeId="a540bb87-d3e9-4b2b-9d1d-8250c5ee3668" valueTypeId="77cf4a56-16b7-426b-bb4b-8cb0f67d0367"/>
+    <refType typeId="0a7fafa1-95f3-491b-9ca1-7089f1b92c3e" valueTypeId="6b088b3e-37b7-4f97-b4db-69969531aad5"/>
+    <selectionType typeId="d06ad506-5070-47fd-b11c-f324465adadc" valueTypeId="4003d6fd-e519-4828-af86-233b7f9b5278"/>
+    <listType typeId="553d214a-74eb-421d-b30e-3f9efaa8a7ae" valueTypeId="0353825e-57ab-48ce-8820-0f5b9534bc56"/>
+    <managerType typeId="271f95cd-4bac-44d7-aba1-14636b448c78" valueTypeId="510db480-8d41-40aa-96a7-2383db5c04fa"/>
+    <routePointRef typeId="193618ac-878e-4e2b-b91e-8382c2598fc1" valueTypeId="311daa62-c6db-4e5f-bc86-5ccc8c997026"/>
+  </producedTypes>
+  <name>ДорегистрацияКлиента</name>
+  <synonym>
+    <key>ru</key>
+    <value>Дорегистрация клиента</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>BusinessProcess.ДорегистрацияКлиента.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>DontUse</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <editType>InDialog</editType>
+  <defaultObjectForm>BusinessProcess.ДорегистрацияКлиента.Form.ФормаБизнесПроцесса</defaultObjectForm>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <task>Task.ЗадачаИсполнителя</task>
+  <createTaskInPrivilegedMode>true</createTaskInPrivilegedMode>
+  <attributes uuid="f2a25a92-cc43-4b0e-95d5-863d5f1a99ed">
+    <name>РегистрацияПодтверждена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регистрация подтверждена</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="fa967e20-7280-448f-90b6-288d2dca5d78">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="5799eb78-360a-4da3-837a-c67fb315a3e5">
+    <name>ФормаБизнесПроцесса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма бизнес процесса</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:BusinessProcess>

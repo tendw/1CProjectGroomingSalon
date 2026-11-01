@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3ba36a33-1887-4bdd-a5c5-9a9a0ceeb1f1">
+  <producedTypes>
+    <objectType typeId="4d7922f1-f15a-4d23-8f7e-0c4f1ed18572" valueTypeId="06f4eb54-269a-40f2-b90f-6ca88e27f2c4"/>
+    <refType typeId="c2a42084-b99a-4bae-a6ef-e4bdb811b905" valueTypeId="172f4bc6-4022-4fa7-8777-184c5ec2115f"/>
+    <selectionType typeId="f821e773-5cc8-4a50-83f1-c37c86f40466" valueTypeId="584883ea-45a7-4f76-840e-0ccf36178b5e"/>
+    <listType typeId="4bb1284e-83ec-4f15-950f-2e8fc6f36968" valueTypeId="7e31e021-a664-47b4-8816-7f36bb45e038"/>
+    <managerType typeId="cae9e5b1-cee7-468f-8583-5e8e593a0cbb" valueTypeId="eca73c5c-61f3-4ef6-9d0a-524d01b1408b"/>
+  </producedTypes>
+  <name>УстановкаЦенПоставщика</name>
+  <synonym>
+    <key>ru</key>
+    <value>Установка цен поставщика</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.УстановкаЦенПоставщика.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.УстановкаЦенПоставщика.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.УстановкаЦенПоставщика.Form.ФормаСписка</defaultListForm>
+  <registerRecords>InformationRegister.ЦеныНоменклатурыПоставщиков</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="a210eb7c-c423-4eaf-a5b1-9033af878cc8">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameters>
+      <name>Отбор.ТипКонтрагента</name>
+      <value xsi:type="core:ReferenceValue">
+        <value>Enum.ТипыКонтрагентов.EnumValue.Поставщик</value>
+      </value>
+    </choiceParameters>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="79092777-e41a-4e50-aefa-9be532c62a91">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="499b4232-4a98-446e-b94d-68164225d863">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="3ae90031-f174-49b1-b749-c9ef907a7e96">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="8ad0e068-5f7b-403c-9618-9672461577e8">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="ce8f3754-3151-4237-9c88-ec8ed4fae47e">
+    <producedTypes>
+      <objectType typeId="9e7d76cf-4371-49de-9e9a-0226921c3aaa" valueTypeId="d76c11e8-d2c8-42b2-99b0-26fe1bc41905"/>
+      <rowType typeId="c9aee8d4-816d-4611-ba14-2a6816c2d47a" valueTypeId="b494aac1-20fc-4baa-9004-c7a3112a8bb0"/>
+    </producedTypes>
+    <name>Товары</name>
+    <synonym>
+      <key>ru</key>
+      <value>Товары</value>
+    </synonym>
+    <attributes uuid="4e8493ba-c1b7-4f60-8c1d-df859a76970d">
+      <name>Номенклатура</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номенклатура</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Номенклатура</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="071c737e-9070-437a-97dc-544ff0052c27">
+      <name>Цена</name>
+      <synonym>
+        <key>ru</key>
+        <value>Цена</value>
+      </synonym>
+      <type>
+        <types>DefinedType.ФинансовыеДанные</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <lineNumberLength>9</lineNumberLength>
+  </tabularSections>
+</mdclass:Document>

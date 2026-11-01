@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f8d8150d-7628-4e1f-87cb-f9f54cda87cf">
+  <name>Продажи</name>
+  <synonym>
+    <key>ru</key>
+    <value>Продажи</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.Продажи</picture>
+  </picture>
+  <content>Catalog.Контрагенты</content>
+  <content>Catalog.ПородыПитомцев</content>
+  <content>Catalog.ДоговорыСПоставщиками</content>
+  <content>Catalog.Номенклатура</content>
+  <content>Catalog.ИсточникиИнформации</content>
+  <content>Catalog.Склады</content>
+  <content>Document.ЗаписьКлиента</content>
+  <content>Document.РеализацияТоваровИУслуг</content>
+  <content>DataProcessor.МониторРуководителя</content>
+  <content>DataProcessor.ПланированиеЗагрузкиСотрудников</content>
+  <content>Document.ПеремещениеТоваров</content>
+  <content>Report.ОтчетПоОказаннымУслугам</content>
+  <content>Report.ТоварыНаСкладах</content>
+  <content>Catalog.СтатьиЗатрат</content>
+  <content>AccumulationRegister.УчетЗатрат</content>
+  <content>Report.ОтчетПоПрибыли</content>
+</mdclass:Subsystem>
